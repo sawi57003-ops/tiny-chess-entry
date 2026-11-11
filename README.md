@@ -23,6 +23,12 @@ Against the kit's 16-game gauntlet (depth-2 to nodes-2M anchors):
 - **1 win, 4 draws, 11 losses (3.0/16, ~1145 Elo)**, ~42 min wall time
 - No timeouts, no crashes, deterministic replay
 
+## Verification
+
+- PERFT: all 6 standard positions correct through depth 4 (incl. Kiwipete)
+- Determinism: identical output across repeated runs (fixed node budget)
+- Speed: ~36,000 nodes/sec on the VM (mid-game position)
+
 ## License
 
 MIT. See `LICENSE`.
